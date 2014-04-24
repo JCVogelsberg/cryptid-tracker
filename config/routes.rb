@@ -1,7 +1,6 @@
 CryptidTracker::Application.routes.draw do
   devise_for :users
-  resources :users
-
+  resource :sightings
 
   root to: 'pages#map'
 end
