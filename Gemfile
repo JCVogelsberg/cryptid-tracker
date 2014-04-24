@@ -13,6 +13,7 @@ gem 'bcrypt-ruby'
 gem 'smarter_csv'
 gem 'bootstrap-sass'
 gem 'devise'
+gem 'gmaps4rails'
 
 
 group :development do
