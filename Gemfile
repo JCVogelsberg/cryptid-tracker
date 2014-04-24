@@ -11,8 +11,10 @@ gem 'jquery-turbolinks'
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'bcrypt-ruby'
 gem 'smarter_csv'
-gem 'less-rails-bootstrap'
+gem 'bootstrap-sass'
 gem 'devise'
+gem 'gmaps4rails'
+
 
 group :development do
   gem 'better_errors'

@@ -44,6 +44,8 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.1.1.1)
+      sass (~> 3.2)
     builder (3.1.4)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -79,6 +81,7 @@ GEM
     factory_girl_rails (4.4.1)
       factory_girl (~> 4.4.0)
       railties (>= 3.0.0)
+    gmaps4rails (2.1.2)
     hike (1.2.3)
     i18n (0.6.9)
     jquery-rails (3.1.0)
@@ -93,8 +96,6 @@ GEM
     less-rails (2.5.0)
       actionpack (>= 3.1)
       less (~> 2.5.0)
-    less-rails-bootstrap (3.1.1.1)
-      less-rails (~> 2.5.0)
     libv8 (3.16.14.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -187,14 +188,15 @@ DEPENDENCIES
   bcrypt-ruby
   better_errors
   binding_of_caller
+  bootstrap-sass
   capybara
   coffee-rails
   devise
   factory_girl_rails
+  gmaps4rails
   jquery-rails
   jquery-turbolinks
   less-rails
-  less-rails-bootstrap
   paperclip!
   pg
   quiet_assets
