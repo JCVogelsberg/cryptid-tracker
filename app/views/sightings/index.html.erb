@@ -1,0 +1,11 @@
+<h1>Here is a list of your sightings:</h1>
+
+<ul>
+
+<% @sightings.each do |s|%>
+  <li>
+      <% s.name%>, <% s.latitude%> <% s.longitude%>
+  </li>
+
+<% end %>
+</ul>
