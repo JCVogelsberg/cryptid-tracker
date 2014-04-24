@@ -1,0 +1,11 @@
+
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: cryptid_tracker_development
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: cryptid_tracker_test
+
