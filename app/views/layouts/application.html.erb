@@ -7,17 +7,7 @@
   <%= csrf_meta_tags %>
 
   <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=AIzaSyD-mY93-KPr7OLzxyDCLSWz4_JTZSz8agg&sensor=false", "application", "data-turbolinks-track" => true %>
-  <script type="text/javascript">
-      function initialize() {
-        var mapOptions = {
-          center: new google.maps.LatLng(0, 0),
-          zoom: 2
-        };
-        var map = new google.maps.Map(document.getElementById("map-canvas"),
-            mapOptions);
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+
 </head>
 <body>
 
