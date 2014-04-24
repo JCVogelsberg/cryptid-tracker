@@ -1,0 +1,34 @@
+#header {
+  background-color: black;
+
+  a {
+    color: black;
+    text-decoration: none;
+    float: right;
+  }
+  a:hover {
+   text-decoration: none;
+   color: red;
+  }
+}
+
+.container h2 {
+  margin-top: -15px;
+}
+.brand {
+  a {
+    color:white !important;
+    font-weight: bold;
+    font-size: 1.2em
+  }
+}
+
+
+
+.nav button{
+  float: right;
+}
+
+.dropdown-toggle a{
+  color: white;
+}
