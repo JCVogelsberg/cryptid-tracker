@@ -1,5 +1,16 @@
-#header {
-  background-color: black;
+html {
+  height: 100%
+}
+body {
+  height: 100%; margin: 0; padding: 0
+}
+#map-canvas {
+  height: 95%;
+  width: 100%;
+}
+
+div#header {
+  background-color: #CEE0BB !important;
 
   a {
     color: black;
