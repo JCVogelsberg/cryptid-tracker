@@ -11,3 +11,11 @@ This is a practice app to figure out the Googe Map API.  It will experiment with
 * Models for sightings and users is complete including Devis authentication.
 * Homepage displays map using the Google Map API.
 * Map is able to display markers.
+
+###User Stories
+* As a user, I want to add a new sighting.
+* As a user, I want to view a map of all sightings.
+* As a user, I want to filter sightings by type.
+* As a user, I want to see a list of current cryptids.
+* On the homepage, I want to see a map of all sightings.
+* On the homepage, I want to filter sightings by cryptid type.
