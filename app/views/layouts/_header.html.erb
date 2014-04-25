@@ -2,25 +2,28 @@
 
     <ul class="nav navbar-nav pull-right">
       <% if user_signed_in? %>
+        <% our_user = current_user %>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email  %><b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <%= our_user.email  %><b class="caret"></b>
+          </a>
           <ul class="dropdown-menu">
-            <button><%= link_to 'Dashboard', user_path(current_user) %></button>  <button><%= link_to 'Edit profile', edit_user_registration_path %></button> <button><%= link_to "Logout", destroy_user_session_path, method: :delete %></button>
+            <button><%= link_to 'Edit profile', edit_user_registration_path %></button>
+            <button><%= link_to "Logout", destroy_user_session_path, method: :delete %></button>
           </ul>
         </li>
-          <li></li>
-            <li><li>
-          <% else %>
-            <button><%= link_to "Sign up", new_user_registration_path %></button>   <button><%= link_to "Login", new_user_session_path %></button>
-          <% end %>
-        </div>
+      <% else %>
+        <button><%= link_to "Sign up", new_user_registration_path %></button>
+        <button><%= link_to "Login", new_user_session_path %></button>
+      <% end %>
+        <!-- </div> -->
 
         <% flash.each do |name, msg| %>
           <%= content_tag :div, msg, id: "flash_#{name}" %>
         <% end %>
 
     </ul>
-  </div>
+  <!-- </div> -->
 </div>
 
 
