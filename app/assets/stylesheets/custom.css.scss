@@ -72,10 +72,18 @@ text-align: center;
 line-height: 1em;
 }
 .brand-heading {
-  font-size: 3em;
+  font-weight: normal;
+  font-size: 8em;
   color: white;
+  font-family: "capture_smallz";
 }
+
 .brand-sub {
   font-size: 2em;
   color: white;
+}
+
+@font-face {
+  font-family: "capture_smallz";
+  src: url("/assets/capture_smallz.ttf") format("truetype");
 }
