@@ -2,15 +2,22 @@ html {
   height: 100%
 }
 body {
-  height: 100%; margin: 0; padding: 0
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: black url(mysterious_forest.jpg) center no-repeat;
+  background-size: cover;
+  /*background-color: #007733;*/
 }
 #map-canvas {
-  height: 95%;
-  width: 100%;
+  height: 75%;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-div#header {
-  background-color: #CEE0BB !important;
+ul#header {
+  background-color: #CCAA88 !important;
 
   a {
     color: black;
@@ -21,6 +28,10 @@ div#header {
    text-decoration: none;
    color: red;
   }
+}
+
+div.header {
+  background-color: #CCAA88 !important;
 }
 
 .container{
@@ -34,16 +45,9 @@ div#header {
   }
 }
 
-
-
-/*.nav button{
-  float: right;
-}*/
-
 .dropdown-toggle a {
   color: white;
 }
-
 
 .navbar-inverse{
   position:fixed; top:0px; margin:auto; z-index:100000; width:100%;
@@ -58,7 +62,20 @@ div#header {
     margin-left: 500px;
   }
 
-
 .dropdown{
   margin-left: 500px;
+}
+
+.main-heading {
+margin: 0 auto;
+text-align: center;
+line-height: 1em;
+}
+.brand-heading {
+  font-size: 3em;
+  color: white;
+}
+.brand-sub {
+  font-size: 2em;
+  color: white;
 }
