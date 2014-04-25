@@ -34,6 +34,7 @@ group :test do
   gem 'shoulda-matchers'
   gem "shoulda-callback-matchers"
   gem 'launchy'
+  gem 'faker'
 
 end
 

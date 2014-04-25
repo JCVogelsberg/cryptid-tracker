@@ -14,20 +14,19 @@ describe "sign in process", :type => :feature do
 end
 
 describe 'login process', type: :feature do
-  test_user = nil
 
   before :each do
-    test_user = User.create(email: 'test@email.com', password: UserAuthentication::DEFAULT_PASSWORD)
+    @test_user = User.create(email: 'test@email.com', password: UserAuthentication::DEFAULT_PASSWORD)
   end
 
   it 'logs me in' do
-    login!(test_user)
+    login!(@test_user)
 
     expect(page).to have_content 'Signed in successfully.'
   end
 
   it 'logs me out' do
-    login!(test_user)
+    login!(@test_user)
     click_link 'Logout'
 
     expect(page).to have_content 'Signed out successfully.'
