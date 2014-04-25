@@ -1,16 +1,18 @@
 class SightingsController < ApplicationController
 
+  before_filter :authorize, only: [:edit, :update, :destroy]
 
   def new
     @sighting = Sighting.new
+    @sightings = Sighting.all
   end
 
   def create
     @sighting = Sighting.new(sighting_params)
     if @sighting.save
-       redirect_to root_url, notice: "Thank you for reporting your sighting"
+       redirect_to :back, notice: "Thank you for reporting your sighting"
     else
-      redirect_to :back
+      redirect_to :back, alert:  "Something went wrong. Try again."
     end
   end
 

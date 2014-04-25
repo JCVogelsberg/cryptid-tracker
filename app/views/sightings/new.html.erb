@@ -1,3 +1,21 @@
-<h3>Please Enter Your Cryptid Sighting</h3>
+<div class="container main-container new-cryptid">
+  <div class="row">
+    <div class="form-box col-sm-5">
+      <h3>Enter Your Cryptid Sighting:</h3>
 
-<%= render "form" %>
+      <%= render "form" %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    </div>
+    <div class="cryptid-list col-sm-5">
+      <h3>Current Cryptids:</h3>
+      <ul>
+        <% if @sightings.any? %>
+        <% @sightings.each do |cryptid| %>
+        <li><%= cryptid.name %></li>
+          <% end %>
+          <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

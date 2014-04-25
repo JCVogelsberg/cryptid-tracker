@@ -87,3 +87,50 @@ line-height: 1em;
   font-family: "Capsmall";
   src: url("/assets/capture_smallz/Capsmall.ttf") format("truetype");
 }
+.main-container {
+  margin: 0 auto;
+  text-align: center;
+}
+.new-cryptid {
+  h3 {
+    color: #BF8D2A;
+  }
+  .form-box {
+    margin-top: 65px;
+    text-align: left;
+    padding: 25px;
+    label {
+      color: white;
+    }
+    input {
+      border: 2px solid #BF8D2A;
+      background-color: transparent;
+      color: white;
+    }
+    textarea {
+      border: 2px solid #BF8D2A;
+      background-color: transparent;
+      height: 150px;
+      color: white;
+    }
+  }
+
+  .cryptid-list {
+    margin-top: 80px;
+    color: white;
+  padding-left: 30px;
+  ul li {
+    list-style: none;
+  }
+  }
+}
+.alert {
+  color: red;
+}
+.notice {
+  color: green;
+}
+
+
+
+
