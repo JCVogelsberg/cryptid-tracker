@@ -1,22 +1,26 @@
 <div id="header" class="nav navbar navbar-fixed-top">
-
-    <ul class="header nav navbar-nav pull-right">
-      <% if user_signed_in? %>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email  %><b class="caret"></b></a>
-          <ul class="dropdown-menu">
-              <button><%= link_to 'Edit profile', edit_user_registration_path %></button>
-              <button><%= link_to "Logout", destroy_user_session_path, method: :delete %></button>
-          </ul>
-        </li>
-          <li></li>
-            <li><li>
-          <% else %>
-            <button><%= link_to "Sign up", new_user_registration_path %></button>   <button><%= link_to "Login", new_user_session_path %></button>
-          <% end %>
-        </div>
-    </ul>
-  </div>
+  <ul class="nav navbar-nav navbar-left">
+    <li><%= link_to "Cryptid Tracker", root_path %></li>
+  </ul>
+  <ul class="header nav navbar-nav pull-right">
+      <li><%= link_to "New Sighting", new_sightings_path %></li>
+    <% if user_signed_in? %>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= current_user.email  %><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <button><%= link_to 'Edit profile', edit_user_registration_path %></button>
+          <button><%= link_to "Logout", destroy_user_session_path, method: :delete %></button>
+        </ul>
+      </li>
+      <% else %>
+      <button>
+        <%= link_to "Sign up", new_user_registration_path %>
+      </button>
+      <button>
+        <%= link_to "Login", new_user_session_path %>
+      </button>
+    <% end %>
+  </ul>
 </div>
 
 
